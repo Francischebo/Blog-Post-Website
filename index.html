@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blogging Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">BlogSphere</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to BlogSphere</h1>
+            <p>Share your stories and ideas with the world!</p>
+        </section>
+
+        <section class="blogs">
+            <h2>Recent Posts</h2>
+            <div class="blog-list">
+                <!-- Blog posts will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <section id="login" class="auth-section">
+            <h2>User Authentication</h2>
+            <form id="auth-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <section class="create-edit-post">
+            <h2>Create/Edit Post</h2>
+            <form id="post-form">
+                <label for="post-title">Title:</label>
+                <input type="text" id="post-title" name="post-title" required>
+
+                <label for="post-content">Content:</label>
+                <textarea id="post-content" name="post-content" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section class="comments">
+            <h2>Comments</h2>
+            <div class="comment-section">
+                <form id="comment-form">
+                    <label for="comment">Add a Comment:</label>
+                    <textarea id="comment" name="comment" rows="3" required></textarea>
+                    <button type="submit">Post Comment</button>
+                </form>
+                <div class="comment-list">
+                    <!-- Comments will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BlogSphere. All rights reserved.</p>
+    </footer>
+</body>
+</html>
